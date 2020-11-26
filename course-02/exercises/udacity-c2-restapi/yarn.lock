@@ -678,6 +678,11 @@ diff@^4.0.1:
   resolved "https://artifactory-awsi.tools.msi.audi.com/artifactory/api/npm/awsi-npm/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
   integrity sha1-YPOuy4nV+uUgwRqhnvwruYKq3n0=
 
+dotenv@^8.2.0:
+  version "8.2.0"
+  resolved "https://artifactory-awsi.tools.msi.audi.com/artifactory/api/npm/awsi-npm/dotenv/-/dotenv-8.2.0.tgz#97e619259ada750eea3e4ea3e26bceea5424b16a"
+  integrity sha1-l+YZJZradQ7qPk6j4mvO6lQksWo=
+
 dottie@^2.0.0:
   version "2.0.2"
   resolved "https://artifactory-awsi.tools.msi.audi.com/artifactory/api/npm/awsi-npm/dottie/-/dottie-2.0.2.tgz#cc91c0726ce3a054ebf11c55fbc92a7f266dd154"

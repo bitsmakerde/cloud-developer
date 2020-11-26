@@ -1,4 +1,5 @@
 import express from "express";
+require("dotenv").config();
 import { sequelize } from "./sequelize";
 
 import { IndexRouter } from "./controllers/v0/index.router";
@@ -15,7 +16,7 @@ import { V0MODELS } from "./controllers/v0/model.index";
   await sequelize.sync();
 
   const app = express();
-  const port = process.env.PORT || 8081; // default port to listen
+  const port = process.env.PORT || 8080; // default port to listen
 
   app.use(bodyParser.json());
 
