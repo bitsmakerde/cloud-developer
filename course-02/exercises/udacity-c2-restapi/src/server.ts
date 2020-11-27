@@ -10,9 +10,6 @@ import { V0MODELS } from "./controllers/v0/model.index";
 
 (async () => {
   await sequelize.addModels(V0MODELS);
-
-  console.log("sequelize.sync()");
-
   await sequelize.sync();
 
   const app = express();
