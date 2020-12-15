@@ -16,4 +16,7 @@ export const config = {
     host: process.env.POSTGRES_HOST,
     dialect: "postgres",
   },
+  jwt: {
+    secret: "helloworld",
+  },
 };
