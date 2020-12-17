@@ -31,25 +31,12 @@ import { IndexRouter } from "./controller/v0/index.router";
   /**************************************************************************** */
   //! END @TODO1
 
-  router.get("/filteredimage", async (req: Request, res: Response) => {
-    let { image_url } = req.params;
-    console.log("req.params", req.params);
-
-    console.log("image_url", image_url);
-
-    res.send("try GET /filteredimage?image_url={{}}");
-  });
-
-  // Root Endpoint
-  // Displays a simple message to the user
-  /*app.get("/", async (req, res) => {
-    res.send("try GET /filteredimage?image_url={{}}");
-  });*/
-
-  app.use("/api/v0/", IndexRouter);
+  app.use("/", IndexRouter);
 
   app.get("/", async (req, res) => {
-    res.send("/api/v0/");
+    res.send(
+      "test app please use this command {{host}}/filteredimage?image_url=https://i.auto-bild.de/ir_img/1/7/6/3/5/7/9/Alle-Auto-Neuheiten-2020-1200x800-5ee05953c940d5aa.jpg"
+    );
   });
 
   // Start the Server

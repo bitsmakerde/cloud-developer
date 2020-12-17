@@ -7,7 +7,9 @@ const router: Router = Router();
 router.get("/", async (req: Request, res: Response) => {
   let filteredpath = req.query.image_url;
 
-  let filterImageURL = await filterImageFromURL(filteredpath.toString());
+  let filterImageURL: string = await filterImageFromURL(
+    filteredpath.toString()
+  );
 
   res.status(200).sendFile(filterImageURL, (err) => {
     if (err) {
